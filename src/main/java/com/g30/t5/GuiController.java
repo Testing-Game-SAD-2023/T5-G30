@@ -130,26 +130,6 @@ public class GuiController {
 
     }
 
-    @PostMapping("/download")
-    public ResponseEntity<Resource> downloadFile(@RequestParam("elementId") Integer elementId) {
-        // Effettua la logica necessaria per ottenere il nome del file
-        // a partire dall'elementId ricevuto, ad esempio, recuperandolo dal database
-        System.out.println("elementId : " + elementId);
-        String filename = hashMap.get(elementId);
-        System.out.println("filename : " + filename);
-        String basePath = "/app/AUTName/AUTSourceCode/";
-        String filePath = basePath + filename + ".java";
-        System.out.println("filePath : " + filePath);
-        Resource fileResource = new FileSystemResource(filePath);
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=" + filename + ".java");
-        headers.add(HttpHeaders.CONTENT_TYPE, "application/octet-stream");
-
-        return ResponseEntity.ok()
-                .headers(headers)
-                .body(fileResource);
-    }
 
     @GetMapping("/change_password")
     public String showChangePasswordPage() {
