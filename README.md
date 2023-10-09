@@ -35,9 +35,6 @@ docker ps
 ### link DOCUMENTAZIONE:  https://communitystudentiunina-my.sharepoint.com/:w:/g/personal/alfonso_davino_studenti_unina_it/EaFPiFTcvj1OhqpleMcsUkwBPnzyH9G40PQvXN_UUGpsyg?e=SUdIPU
 
 
-### :handshake: Integrazione
-* T2-3 :point_right: [G1](https://github.com/Testing-Game-SAD-2023/T23-G1.git)
-* T6 :point_right: [G12](https://github.com/Testing-Game-SAD-2023/T6-G12.git)
 
 
 
